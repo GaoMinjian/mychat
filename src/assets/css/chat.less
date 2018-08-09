@@ -1,0 +1,100 @@
+#msg-input-box{
+  border-top: 1px solid lightgray;
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 7vh;
+  line-height: 7vh;
+  input{
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    height: 65%;
+    width: 75%;
+    vertical-align: middle;
+    /*right: 10%;*/
+    font-size: 2.5vh;
+    margin-right: 0;
+  }
+}
+
+/*聊天框样式*/
+.chat-line-box{
+  display: flex;
+  vertical-align: middle;
+  margin: 6px;
+  /*box-sizing: border-box;*/
+  /*border: 1px solid;*/
+  img{
+    width: 46px;
+    height: 46px;
+    border-radius: 5px;
+    margin: 0px 5px;
+  }
+  p{
+    display:block;
+    max-width: 55vw;
+    word-break: normal;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid lightgray;
+  }
+}
+.msg-box{
+  /*padding: 0.5em;*/
+  display: block;
+}
+.info{
+  font-size: 0.55em;
+  color: gray;
+}
+.msg-content{
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.self{
+  justify-content: flex-end;
+  p.msg-content{
+    background-color: #47FA52;
+  }
+  div.info{
+    float: right;
+  }
+}
+.other{
+  justify-content: flex-start;
+  p.msg-content{
+    background-color: white;
+  }
+  div.info{
+    float: left;
+  }
+}
+
+/*底部发送框右侧选项及发送按钮*/
+.option{
+  width:20vw;
+  vertical-align: middle;
+  float: right;
+  position: relative;
+  top: 1.5vh;
+  img{
+    height: 4vh;
+    width: 4vh;
+    display: inline-block;
+    margin: 0px auto;
+    /*vertical-align: middle;
+    float: right;
+    position: relative;
+    top: 1.5vh;
+    margin-right: 1.5vw;*/
+  }
+}
+#send{
+  display: inline-block;
+  position: relative;
+  bottom: 1.5vh;
+  box-shadow: 0 0 1px black;
+  font-size: 10px;
+}

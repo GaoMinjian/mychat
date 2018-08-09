@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="item">
+
+  <p class="line-limit-length">最新消息：神秘地球黑洞深不可测，不停吸入周围海水。</p>
+
+  <i class="icon icon-arrow-go"></i> //图标字体
+  <h5 class="product-buyer-name">橘子橘子</h5>
+  <h5 class="product-buyer-name">橘子橘子匿名用户匿名</h5>
+</div>
+<script>
+  var a=[];
+  var value = new Date().getTime();
+  let date = new Date(value);
+  let y = date.getFullYear();
+  let MM = date.getMonth() + 1;
+  MM = MM < 10 ? ('0' + MM) : MM;
+  let d = date.getDate();
+  d = d < 10 ? ('0' + d) : d;
+  let h = date.getHours();
+  h = h < 10 ? ('0' + h) : h;
+  let m = date.getMinutes();
+  m = m < 10 ? ('0' + m) : m;
+  let s = date.getSeconds();
+  s = s < 10 ? ('0' + s) : s;
+  var time =y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
+  a.push({
+    time:time
+  });
+  // alert(a[0].time);
+</script>
+</body>
+<style type="text/css">
+  .line-limit-length {
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+
+  }
+  .product-buyer-name {
+
+    max-width: 110px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+  }
+</style>
+</html>
